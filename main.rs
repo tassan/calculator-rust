@@ -4,7 +4,7 @@ fn main() {
     println!("Sum -> 2 + 2 = {}", sum(2, 2));
     println!("Sub -> 2 - 2 = {}", sub(2, 2));
     println!("Mult -> 2 * 2 = {}", mult(2, 2));
-    println!("Div -> 2 / 2 = {}", 1);
+    println!("Div -> 2 / 2 = {}", div(2, 2));
 }
 
 fn sum(a: i32, b: i32) -> i32 {
