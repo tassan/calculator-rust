@@ -26,3 +26,13 @@ fn mult(a: i32, b: i32) -> i32 {
     
     result
 }
+
+fn div(a: i32, b: i32) -> i32 {
+    let mut c = 0;
+    let mut result = 0;
+
+    c += 1;
+    result = sub(a, mult(b, c));
+    
+    result
+}
