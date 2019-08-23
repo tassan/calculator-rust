@@ -3,7 +3,7 @@ fn main() {
     println!("Here are some examples of calcs:");
     println!("Sum -> 2 + 2 = {}", sum(2, 2));
     println!("Sub -> 2 - 2 = {}", sub(2, 2));
-    println!("Mult -> 2 * 2 = {}", 4);
+    println!("Mult -> 2 * 2 = {}", mult(2, 2));
     println!("Div -> 2 / 2 = {}", 1);
 }
 
@@ -13,4 +13,16 @@ fn sum(a: i32, b: i32) -> i32 {
 
 fn sub(a: i32, b: i32) -> i32 {
     a-b
+}
+
+fn mult(a: i32, b: i32) -> i32 {
+    let mut times = b;
+    let mut result = 0;
+    
+    while times != 0 {
+        result = sum(result, a);
+        times -= 1;
+    }
+    
+    result
 }
